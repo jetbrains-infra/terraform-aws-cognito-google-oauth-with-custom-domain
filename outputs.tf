@@ -6,6 +6,10 @@ output "pool_arn" {
   value = aws_cognito_user_pool.users.arn
 }
 
+output "pool_id" {
+  value = aws_cognito_user_pool.users.id
+}
+
 output "cloudfront_distribution_arn" {
   value = aws_cognito_user_pool_domain.custom.cloudfront_distribution_arn
 }
